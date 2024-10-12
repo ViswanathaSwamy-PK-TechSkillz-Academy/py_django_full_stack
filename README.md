@@ -17,4 +17,6 @@ virtualenv .venv
 
 python.exe -m pip install --upgrade pip
 pip install django
+
+django-admin startproject devsearch
 ```
