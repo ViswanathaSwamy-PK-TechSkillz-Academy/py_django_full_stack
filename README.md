@@ -14,4 +14,7 @@ I am learning Python Django Full Stack from different Video Courses, Books, and 
 pip install virtualenv
 virtualenv .venv
 .venv\scripts\activate
+
+python.exe -m pip install --upgrade pip
+pip install django
 ```
