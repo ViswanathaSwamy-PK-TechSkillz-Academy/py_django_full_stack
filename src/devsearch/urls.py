@@ -15,19 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.http import HttpResponse
 from django.urls import path
-
-
-#  /projects/ -> List of Projects
-def projects(request):
-    return HttpResponse('List of Projects')
-
-# /project/1/ -> Single Project
-
-
-def project(request, pk):
-    return HttpResponse(f'A Single Project with id {pk}')
 
 
 urlpatterns = [
