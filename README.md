@@ -20,4 +20,6 @@ pip install django
 
 django-admin startproject devsearch
 py manage.py runserver
+
+py manage.py startapp projects
 ```
