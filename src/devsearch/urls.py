@@ -19,16 +19,17 @@ from django.http import HttpResponse
 from django.urls import path
 
 
+#  /projects/ -> List of Projects
 def projects(request):
     return HttpResponse('List of Projects')
 
-
-def project(request):
+# /project/1/ -> Single Project
+def project(request, pk):
     return HttpResponse('A Single Project')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('projects/', projects, name='projects'),
-    path('project/', project, name='project'),
+    path('project/<str:pk>/', project, name='project'),
 ]
