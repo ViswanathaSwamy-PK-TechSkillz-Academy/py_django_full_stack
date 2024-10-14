@@ -6,9 +6,9 @@ from django.shortcuts import render
 
 #  /projects/ -> List of Projects
 def projects(request):
-    return HttpResponse('List of Projects')
+    return render(request, 'projects.html')
 
 
 # /project/1/ -> Single Project
 def project(request, pk):
-    return HttpResponse(f'A Single Project with id {pk}')
+    return render(request, 'single-project.html')
